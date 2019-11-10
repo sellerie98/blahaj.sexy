@@ -106,12 +106,7 @@ fn index(req: &mut Request) -> IronResult<Response> {
             false
         }
     };
-    let now = Utc::now();
-    let title = if BIRTHDAY.month() == now.month() && BIRTHDAY.day() == now.day() {
-        "Happy GNU/Birthday"
-    } else {
-        "Our GNU/Lord and GNU/Savior is 100% sexy!"
-    };
+    let title = "The best Blåhajs in the galaxy!";
 
     let extra_meta = if js_enabled {
         ""
