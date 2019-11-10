@@ -106,7 +106,7 @@ fn index(req: &mut Request) -> IronResult<Response> {
             false
         }
     };
-    let title = "The best Blåhajs in the galaxy!";
+    let title = "The best Blåhajs in the galaxy! (No official affiliation with IKEA or anyone else!)";
 
     let extra_meta = if js_enabled {
         ""
