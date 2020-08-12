@@ -69,8 +69,8 @@ fn main() {
     let mut chain = iron::middleware::Chain::new(router);
     chain.link_after(RMS404Handler);
 
-    let _server = Iron::new(chain).http("0.0.0.0:3001").unwrap();
-    println!("Listening on 3001");
+    let _server = Iron::new(chain).http("0.0.0.0:3010").unwrap();
+    println!("Listening on 3010");
 }
 
 // AGPL compliance. We exclude the images to avoid increasing build and download size too much;
